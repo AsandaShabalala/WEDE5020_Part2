@@ -68,6 +68,10 @@ body{
     margin-top: 10px;
     font-size: 20px;
 }
+.nav-links ul{
+    display:flexbox;
+    list-style:none;
+}
 a:visited{
     color:rgb(97, 4, 58)
 }
@@ -102,26 +106,4 @@ h1{
 #brief-history{
     width: 40%;
     font-size: 30px;
-}
-
-        /* team member styling */
-.team-member{
-    margin: 25px;
-}
-.member-name{
-    font-size: 20px;
-    text-shadow: 5px 5px 10px black;
-}
-.member-picture{
-    display:flex;
-    width: 400px;
-    height:330px;
-    margin:5px;
-}
-.member-picture img{
-    width: 100%;
-    height: 100%;
-}
-.member-info{
-    margin: 5px;
 }
