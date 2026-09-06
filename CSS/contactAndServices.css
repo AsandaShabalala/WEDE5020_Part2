@@ -1,0 +1,75 @@
+        /* Contact page styling */
+
+.address{
+    display:grid;
+    justify-content:center;
+    padding: 1%;
+    
+}
+.address p{
+    font-size:large;
+}
+
+
+
+.form{
+    border: 10px double rgb(99, 47, 47);
+    background-color: rgb(197, 229, 241);
+    margin: 1px;
+    padding: 5px;
+    width: 50%;
+}
+.form input, form textarea{
+    background-color: rgb(193, 219, 211);
+    width:70%;
+    
+
+}
+.form input[type="submit"]{
+    width:20%;
+}
+.map{
+    border: 5px solid rgb(180, 212, 218);
+    display:inline-block;
+    padding: 4px;
+}
+
+.intro{
+    text-align: center;
+    width: 100%;
+}
+.intro h4{
+    padding: 8px;
+    padding-bottom: 5px;
+    border-bottom: 3px dotted black;
+    
+}
+.intro p{
+    padding-top: 5px;
+    font-size: large;
+    width: 50%;
+    text-align: center;
+    margin-left: 30%;
+}
+.service{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 30px 0;
+    padding: 5px;
+
+    background-image: url("Images/serviceBackground.jpg");
+}
+.service img{
+    border-radius: 10px;
+    width: 50%;
+    max-width: 400px;
+}
+.info {
+    margin: 1.5%;
+    width: 30%;    
+}
+
+.info h3{
+    padding-bottom: 30px;
+}
