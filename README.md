@@ -22,7 +22,7 @@ I have 5 webpages being
 almost everything that was not showed to us by our lecture, i used for CSS i got it from these yt videos
 
         css styling
-    -(https://youtu.be/wRNinF7YQqQ?si=q4d-T-w_W3zw3ypE)
+    -[CSS styling Bro code](https://youtu.be/wRNinF7YQqQ?si=q4d-T-w_W3zw3ypE)
 
         Mobile responsive
-    -(https://youtu.be/K24lUqcT0Ms?si=nQMZrcPQOsJWfa4j)
+    -[Media queries](https://youtu.be/K24lUqcT0Ms?si=nQMZrcPQOsJWfa4j)
