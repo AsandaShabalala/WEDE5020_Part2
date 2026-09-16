@@ -13,7 +13,7 @@ header {
     padding: 19px;
 
     text-shadow: 5px 5px 10px black;
-    background-image: url("/Images/background.jpg");
+    background-image: url("../Images/background.jpg");
     background-size: cover;
     background-position: center;
     border-bottom: 7px solid rgb(91, 122, 126);
@@ -49,7 +49,7 @@ body{
     margin-left: 10%;
     margin-bottom: 5px;
     
-     animation: 5s linear 0s 3 running my-opacity; 
+    animation: 5s linear 0s 3 running my-opacity; 
 }
 @keyframes my-opacity{
     40%{
