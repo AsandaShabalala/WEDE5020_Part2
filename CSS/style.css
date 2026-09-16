@@ -3,9 +3,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
-header {
-    
+
+header {   
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,7 +49,7 @@ body{
     margin-left: 10%;
     margin-bottom: 5px;
     
-    /* animation: 5s linear 0s 3 running my-opacity; */
+     animation: 5s linear 0s 3 running my-opacity; 
 }
 @keyframes my-opacity{
     40%{
@@ -59,6 +60,7 @@ body{
     font-size: 15px;
     background-color: rgba(17, 95, 109, 0.945);
 }
+
         /* navigation links styling */
 .nav-links{
     margin-left: auto;
@@ -83,10 +85,10 @@ a:visited{
     color:rgb(196, 52, 165)
 }
 a:hover{
-    color:rgb(17, 98, 109)
+    color:rgb(212, 183, 14)
 }
 a:link{
-    color:rgb(5, 5, 12)
+    color:rgb(28, 28, 163)
 }
 
         /* Introduction styling */
@@ -123,6 +125,7 @@ h1{
     font-size: 25px;  
 }
 
+    /* hyperLinks styling */
 .hyperLinks{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -156,4 +159,39 @@ footer h3 {
     color: #d3cdcd;
     border-top: 1px solid black;
     padding-top: 15px;  
+}
+
+    /* Mobile responsivenes */
+
+@media (max-width: 600px){
+    
+    .nav-links ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.8rem;
+    }
+
+    header{
+        flex-direction: column;
+        text-align: center;
+    }
+    .logo{
+        margin: auto;
+    }
+    .video-content {
+        flex-direction: column;
+    }
+    .hyperLinks{
+        grid-template-columns: auto;
+    }
+    .video {
+        width: 100%;
+        height: auto;
+    }
+    #brief-history {
+        width: 100%;
+        font-size: 1rem;
+        text-align: center;
+    }
 }
