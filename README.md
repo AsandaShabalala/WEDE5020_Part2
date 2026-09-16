@@ -2,12 +2,13 @@
 
 This website for an old age organization so that people can find out more about them.
 
-I have 5 webpages being
-    - Home page
-    - About Us page
-    - Services page
-    - Gallery page
-    - Contact page  
+## Current Webpages
+
+- Home page
+- About Us page
+- Services page
+- Gallery page
+- Contact page
 
 ## What I used so far
     - HTML
@@ -15,14 +16,14 @@ I have 5 webpages being
 
 ## Three CSS files
 
-   style.css — Main stylesheet used across the website
-   aboutUsAndGallery.css — Styling for the About Us and Gallery webpages
-   contactAndServices.css — Styling for the Contact and Services webpages
+- style.css — Main stylesheet used across the website
+- aboutUsAndGallery.css — Styling for the About Us and Gallery webpages
+- contactAndServices.css — Styling for the Contact and Services webpages
 
-almost everything that was not showed to us by our lecture, i used for CSS i got it from these yt videos
+### almost everything that was not showed to us by our lecture, i used for CSS i got it from these yt videos
 
-        css styling
-    -[CSS styling Bro code](https://youtu.be/wRNinF7YQqQ?si=q4d-T-w_W3zw3ypE)
+- CSS styling 
+(https://youtu.be/wRNinF7YQqQ?si=q4d-T-w_W3zw3ypE)
 
-        Mobile responsive
-    -[Media queries](https://youtu.be/K24lUqcT0Ms?si=nQMZrcPQOsJWfa4j)
+- Media queries
+(https://youtu.be/K24lUqcT0Ms?si=nQMZrcPQOsJWfa4j)
