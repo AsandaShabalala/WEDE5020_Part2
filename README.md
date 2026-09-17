@@ -35,3 +35,6 @@ This website for an old age organization so that people can find out more about 
 
 - Media queries
 (https://youtu.be/K24lUqcT0Ms?si=nQMZrcPQOsJWfa4j)
+
+- Meta viewpoint for mobile response
+(https://youtu.be/duKr29QU5ZI?si=lpioKEsYq_7JdI4X)
