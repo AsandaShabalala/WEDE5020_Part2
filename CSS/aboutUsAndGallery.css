@@ -86,8 +86,13 @@
     border-radius: 5%;
 
     padding:2px;
-    margin-left: 10%;
+    margin-left: 5%;
 }
 .Images img:hover{
     transform:skew(2deg);
+}
+@media (max-width: 600px){
+    .Images{   
+        grid-template-columns: repeat(1, 1fr);
+    }    
 }
