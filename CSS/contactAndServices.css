@@ -9,9 +9,6 @@
 .address p{
     font-size:large;
 }
-
-
-
 .form{
     border: 10px double rgb(99, 47, 47);
     background-color: rgb(197, 229, 241);
@@ -22,8 +19,6 @@
 .form input, form textarea{
     background-color: rgb(193, 219, 211);
     width:70%;
-    
-
 }
 .form input[type="submit"]{
     width:20%;
