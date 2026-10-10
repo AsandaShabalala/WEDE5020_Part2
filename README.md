@@ -30,11 +30,10 @@ This website for an old age organization so that people can find out more about 
 
 ### almost everything that was not showed to us by our lecture, i used for CSS i got it from these yt videos
 
-- CSS styling 
-(https://youtu.be/wRNinF7YQqQ?si=q4d-T-w_W3zw3ypE)
+- [CSS styling](https://youtu.be/wRNinF7YQqQ?si=q4d-T-w_W3zw3ypE)
 
-- Media queries
-(https://youtu.be/K24lUqcT0Ms?si=nQMZrcPQOsJWfa4j)
+- [Media queries](https://youtu.be/K24lUqcT0Ms?si=nQMZrcPQOsJWfa4j)
 
-- Meta viewpoint for mobile response
-(https://youtu.be/duKr29QU5ZI?si=lpioKEsYq_7JdI4X)
+- [Meta viewpoint for mobile response](https://youtu.be/duKr29QU5ZI?si=lpioKEsYq_7JdI4X)
+
+- [lightBox](https://youtu.be/uKVVSwXdLr0?si=Nu4eB7ETsTl-357f)
