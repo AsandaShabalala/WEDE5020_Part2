@@ -27,7 +27,7 @@ lightbox.addEventListener('click', e => {
   lightbox.classList.remove('active');
 })
 
-
+// FAQs 
 const questions = document.querySelectorAll('.faq-button');
 questions.forEach(question => {
 
@@ -35,4 +35,22 @@ questions.forEach(question => {
     const answer = question.nextElementSibling;
     answer.classList.toggle('active');
   })
+})
+
+// menu bar
+
+
+const menuButton = document.querySelector('.sidebar-button');
+const sidebar = document.querySelector('.sidebar');
+const exitButton = document.querySelector('.exit-sidebar-button');
+
+menuButton.addEventListener('click', () => {
+    sidebar.classList.add('active');
+});
+sidebar.addEventListener('click', e => {
+  if (e.target !== e.currentTarget) return;
+  sidebar.classList.remove('active');
+})
+exitButton.addEventListener('click', e =>{
+  sidebar.classList.remove('active');
 })

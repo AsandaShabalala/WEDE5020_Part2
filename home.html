@@ -5,6 +5,7 @@
     <title>Home page</title>
     <link href="CSS/style.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Images/Logo.jpg" type="image/jpeg">
 </head>
 
 <body>
@@ -22,12 +23,27 @@
         <nav>
             <div class="nav-links">
                 
-                <ul>
+                <ul class="sidebar">
+
+                    <li class="exit-sidebar-button"><span class="exit-icon">
+                    <img src="Images/exit-icon.svg">
+                    </span></li>
                     <li><a href="home.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+                <ul>
+                    <li><a href="home.html">Home </a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="sidebar-button"><span class="menu-icon">
+                    <img src="Images/menu-icon.svg">
+                    </span></li>
                 </ul>
                  
             </div>
@@ -114,6 +130,7 @@
         <p>info@afto.co.za</p>
         <div class="copyright">&copy; ST10517543</div>
     </footer>
+    <script src="JavaScript/script.js"></script>
 </body>
 
 </html>
