@@ -199,17 +199,11 @@ footer h3 {
     /* Mobile responsivenes */
 
 @media (max-width: 600px){
-    
-    .nav-links ul {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 0.8rem;
-    }
 
     header{
-        flex-direction: column;
-        text-align: center;
+
+        display: flex;
+        justify-content: space-between;
     }
     .logo{
         margin: auto;
@@ -228,6 +222,18 @@ footer h3 {
         width: 100%;
         font-size: 1rem;
         text-align: center;
+    }
+
+    .hideOnMobile{
+        display: none;
+    }
+    .sidebar{
+        max-width: 40%;
+    }
+    .menu-icon img {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
     }
 
 }
