@@ -92,3 +92,48 @@
     border-bottom: 10px solid rgb(59, 61, 68);
     border-radius: 25px;
 }
+
+    /* Frequently asked questions styling */
+.faq-section{
+    margin: 25px auto;
+    margin-left: 1%;
+    padding: 1%;
+    background-color: gray;
+    max-width: 700px;
+    border-radius: 25px;
+    box-shadow: 5px 2px 5px black;
+}
+.faq-title{
+    font-size: 2rem;
+    text-shadow: 5px 2px 20px black;
+    text-align: center;
+}
+.faq-items{
+    font-size: larger;
+    padding: 8px;
+    border-top: 1px solid black;
+}
+.faq-button{
+    padding: 7px;
+    width: 100%;
+    font-size: 1.2rem;
+    background-color: grey;
+    color: rgb(126, 202, 221);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.icon{
+    font-size: x-large; 
+}
+.faq-answer{
+    display: none;
+}
+.faq-answer.active {
+    font-size: large;
+    display: block;
+    padding: 5px;
+    color: aliceblue;
+}

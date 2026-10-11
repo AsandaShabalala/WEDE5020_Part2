@@ -1,4 +1,4 @@
-// creating the lightbox
+// creating the image lightbox
 
 const lightbox = document.createElement('div');
 lightbox.id = 'lightbox';
@@ -25,4 +25,14 @@ lightbox.addEventListener('click', e => {
 
   if (e.target !== e.currentTarget) return;
   lightbox.classList.remove('active');
+})
+
+
+const questions = document.querySelectorAll('.faq-button');
+questions.forEach(question => {
+
+  question.addEventListener('click', e => {
+    const answer = question.nextElementSibling;
+    answer.classList.toggle('active');
+  })
 })
