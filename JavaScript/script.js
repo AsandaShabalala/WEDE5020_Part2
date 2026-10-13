@@ -54,3 +54,12 @@ sidebar.addEventListener('click', e => {
 exitButton.addEventListener('click', e =>{
   sidebar.classList.remove('active');
 })
+
+// form submit, imade this so they can be a pop up when the form is submitted and the page should
+// not reload since that was kind of annoying me sir
+function formSubmittedAlert(){
+
+  event.preventDefault();
+  alert('Form submitted successfully');
+  event.target.reset();
+}

@@ -27,6 +27,10 @@ This website for an old age organization so that people can find out more about 
 - Added images and multimedia content
 - Created a responsive design for mobile devices using media queries
 - Fixed layout and image display issues
+- Added lightbox functionality on the gallery and services pages
+- added a sidebar menu and that can clicked useful for mobile devices
+- added a FAQs section
+- adding a form on the services page and updating them to have the name tags corresponding with their labels
 
 ### almost everything that was not showed to us by our lecture, i used for CSS i got it from these yt videos
 
@@ -35,5 +39,7 @@ This website for an old age organization so that people can find out more about 
 - [Media queries](https://youtu.be/K24lUqcT0Ms?si=nQMZrcPQOsJWfa4j)
 
 - [Meta viewpoint for mobile response](https://youtu.be/duKr29QU5ZI?si=lpioKEsYq_7JdI4X)
+
+- [Html forms](https://youtu.be/zIN54lhJtQU?si=FHsoIm9W-TsE6jbg)
 
 - [lightBox](https://youtu.be/uKVVSwXdLr0?si=Nu4eB7ETsTl-357f)

@@ -20,9 +20,20 @@
     background-color: rgb(193, 219, 211);
     width:70%;
 }
-.form input[type="submit"]{
+/* .form input[type="submit"]{
     width:20%;
+} */
+
+.form-elements{
+    display: grid;
+    font-size: large;
 }
+.form-and-FAQs{
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+}
+
 .map{
     border: 5px solid rgb(180, 212, 218);
     display:inline-block;
@@ -96,10 +107,11 @@
     /* Frequently asked questions styling */
 .faq-section{
     margin: 25px auto;
-    margin-left: 1%;
+    margin-right: 5%;
+    flex: 1;
     padding: 1%;
     background-color: gray;
-    max-width: 700px;
+    max-width: 100%;
     border-radius: 25px;
     box-shadow: 5px 2px 5px black;
 }
@@ -136,4 +148,21 @@
     display: block;
     padding: 5px;
     color: aliceblue;
+}
+
+@media (max-width: 600px){
+
+    .form-and-FAQs{
+        display: flex;
+        flex-direction: column;
+    }
+    .form{
+        width: 100%;
+    }
+    .faq-section{
+        width: 100%;
+    }
+    .map{
+        max-width: 100%;
+    }
 }
