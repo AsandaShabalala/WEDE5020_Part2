@@ -37,8 +37,7 @@ questions.forEach(question => {
   })
 })
 
-// menu bar
-
+// menu sidebar
 
 const menuButton = document.querySelector('.sidebar-button');
 const sidebar = document.querySelector('.sidebar');
@@ -63,3 +62,20 @@ function formSubmittedAlert(){
   alert('Form submitted successfully');
   event.target.reset();
 }
+//date and time
+function updateDateTime(){
+  const now = new Date();
+  const option ={
+
+    weekday: 'long',
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+    hour: '2-digit',
+    minutes: '2-digit',
+    second: '2-digit',
+  }
+
+  document.getElementById('datetime').textContent= now.toLocaleDateString('en-US', option);
+}
+updateDateTime();
