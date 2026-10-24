@@ -150,6 +150,34 @@
     color: aliceblue;
 }
 
+#searviceSearch{
+    border: none;
+    background: white;
+    font-size: larger;
+    width: 100%;
+    background: none;
+    
+}
+.input-container{
+    display: flex;
+    align-content: center;
+    border-radius: 30px;
+    border: none;
+    padding: 0.5%;
+    background: none;
+}
+.search-area{
+    background: white;
+    align-content: center;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 30px;
+    
+}
+#searviceSearch:focus {
+    outline: none;
+}
+
 @media (max-width: 600px){
 
     .form-and-FAQs{
@@ -165,4 +193,22 @@
     .map{
         max-width: 100%;
     }
+    .search-area {
+        width: 100%;
+    }
+    .service{
+    gap: 20px;
+    margin: 5px 0;
+    padding: 0px;
+    border-top: 1px solid rgb(132, 132, 155);
+    border-radius: 5%;
+    }
+    .info {
+    margin: 1.5%;
+    width: 100%;    
+    }
+    .info h3{
+    padding-bottom: 5px;
+    }
+
 }

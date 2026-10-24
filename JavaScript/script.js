@@ -79,3 +79,19 @@ function updateDateTime(){
   document.getElementById('datetime').textContent= now.toLocaleDateString('en-US', option);
 }
 updateDateTime();
+
+//Search feature on service page
+
+const searchService = document.getElementById('searviceSearch');
+searchService.addEventListener('keyup', e =>{
+  let currentValue = e.target.value;
+  let services = document.querySelectorAll('h3.title');
+
+  services.forEach(service =>{
+    if(service.textContent.toLowerCase().includes(currentValue.toLowerCase())){
+      service.parentNode.parentNode.style.display = 'flex';
+    }else{
+      service.parentNode.parentNode.style.display = 'none';
+    }
+  });
+});
