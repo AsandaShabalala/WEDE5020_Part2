@@ -15,6 +15,7 @@
     margin: 1px;
     padding: 5px;
     width: 50%;
+    margin-top: 10px;
 }
 .form input, form textarea{
     background-color: rgb(193, 219, 211);
@@ -68,6 +69,7 @@
     border-radius: 10px;
     width: 50%;
     max-width: 400px;
+    cursor: pointer;
 }
 .info {
     margin: 1.5%;
@@ -176,6 +178,29 @@
 }
 #searviceSearch:focus {
     outline: none;
+}
+
+.more-services{
+    display: none;
+}
+.more-services.active{
+    display: flex;
+    flex-direction: column;
+
+}
+.view-more{
+    align-content: center;
+    width: 50%;
+    margin: 0 auto;
+}
+#view-more-button{
+    border: none;
+    cursor: pointer;
+    font-size: x-large;
+    text-decoration: underline;
+    border-radius: 30px;
+    background-color: rgb(159, 182, 207);
+    padding: 10px 20px;
 }
 
 @media (max-width: 600px){

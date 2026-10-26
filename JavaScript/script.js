@@ -95,3 +95,19 @@ searchService.addEventListener('keyup', e =>{
     }
   });
 });
+
+//Veiw more services 
+const viewMore = document.getElementById('view-more-button');
+const moreServices = document.querySelector('.more-services');
+
+viewMore.addEventListener('click', e =>{
+  const moreServices = document.querySelector('.more-services');
+
+  moreServices.classList.toggle('active');
+  if(moreServices.classList.contains('active')){
+    viewMore.textContent = 'Hide Services';
+  }
+  else{
+    viewMore.textContent = 'View All Services'
+  }
+});

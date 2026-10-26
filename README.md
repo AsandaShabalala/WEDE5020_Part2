@@ -13,6 +13,7 @@ This website for an old age organization so that people can find out more about 
 ## What I used so far
     - HTML
     - CSS
+    - JavaScript
 
 ## Three CSS files
 
@@ -31,6 +32,7 @@ This website for an old age organization so that people can find out more about 
 - added a sidebar menu and that can clicked useful for mobile devices
 - added a FAQs section
 - adding a form on the services page and updating them to have the name tags corresponding with their labels
+- added a ssearch feature to the services page
 
 ### almost everything that was not showed to us by our lecture, i used for CSS i got it from these yt videos
 
@@ -43,3 +45,5 @@ This website for an old age organization so that people can find out more about 
 - [Html forms](https://youtu.be/zIN54lhJtQU?si=FHsoIm9W-TsE6jbg)
 
 - [lightBox](https://youtu.be/uKVVSwXdLr0?si=Nu4eB7ETsTl-357f)
+
+-[Search feature](https://youtu.be/ifi6dXOl3g4?si=EAuFyV8vmpReYjz5)
