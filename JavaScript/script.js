@@ -96,6 +96,23 @@ searchService.addEventListener('keyup', e =>{
   });
 });
 
+//service loading animation
+const services = document.querySelectorAll('.service');
+services.forEach(service =>{
+  let randomAnimationDelay = Math.floor(Math.random() * 500);
+  service.style.animation = `fadeIn 1s .${randomAnimationDelay}s ease forwards`;
+});
+
+// const galleryImgs = document.querySelectorAll('.gallery-img');
+
+// galleryImgs.forEach(galleryImg =>{
+//   let AnimationDelay = Math.floor(Math.random() * 500);
+//   galleryImg.style.animation = `fadeIn 1s .${AnimationDelay}s ease forwards`;
+//   console.log(galleryImg.style.animation);
+
+// });
+
+
 //Veiw more services 
 const viewMore = document.getElementById('view-more-button');
 const moreServices = document.querySelector('.more-services');

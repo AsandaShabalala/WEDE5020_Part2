@@ -46,4 +46,4 @@ This website for an old age organization so that people can find out more about 
 
 - [lightBox](https://youtu.be/uKVVSwXdLr0?si=Nu4eB7ETsTl-357f)
 
--[Search feature](https://youtu.be/ifi6dXOl3g4?si=EAuFyV8vmpReYjz5)
+- [Search feature](https://youtu.be/ifi6dXOl3g4?si=EAuFyV8vmpReYjz5)

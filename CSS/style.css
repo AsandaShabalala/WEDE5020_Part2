@@ -114,7 +114,6 @@ h1{
     gap: 35px;
     margin: 25px auto;
     padding: 0.3%;
-
 }
 .video{
     width: 60%;
@@ -174,9 +173,7 @@ footer h3 {
     box-shadow: -5px 5px 10px black;
     display: none;
     align-items: flex-start;
-    flex-direction: column;
-    
-    
+    flex-direction: column; 
 }
 
 .sidebar.active{
@@ -194,6 +191,17 @@ footer h3 {
 }
 .exit-sidebar-button{
     cursor: pointer;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
 
     /* Mobile responsivenes */
@@ -235,5 +243,4 @@ footer h3 {
     height: 35px;
     cursor: pointer;
     }
-
 }
