@@ -7,6 +7,7 @@
     <link href="CSS/contactAndServices.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="Images/Logo.jpg" type="image/jpeg">
+
 </head>
 
 <body>
@@ -73,35 +74,57 @@
 
     <div class="form-and-FAQs">
 
-        <div class="form">
+        <div class="contact-form">
             <h2>Want to Volunteer With Us?</h2>
             <p>Please fill in the details below and submit </p>
 
-            <form onsubmit="formSubmittedAlert()">
+            <!-- i used Web3Forms to process form submissions and send customer enquiries to the recipient's email address and the access key is what represents my email -->
+            <form id="contactForm"
+            action="https://api.web3forms.com/submit"
+            method="POST"
+            novalidate>
+
+            <input type="hidden"
+            name="access_key"
+            value="c366112d-ee6c-41f9-8eea-0e9de6738886">
+
                 <div class="form-elements">
                     <br>
                 <label for="name">Name:</label>
-                <input id="name" type="text" name="name" placeholder="Enter your name" required/>
+                <input id="name" type="text" name="name" placeholder="Enter your name"/>
+                <p id="nameError" class="error"></p>
+                
                 <br>
                 <br>
+
                 <label for="surname">Surname:</label>
                 <input id="surname" type="text" name="surname" placeholder="Enter your surname" required/>
+                <p id="surnameError" class="error"></p>
                 <br>
                 <br>
+
                 <label for="email">Email:</label>
                 <input id="email" type="email" name="email" placeholder="Enter your email" required/>
+                <p id="emailError" class="error"></p>
                 <br>
                 <br>
+
                 <label for="phone">Phone:</label>
                 <input id="phone" type="tel" name="phone" placeholder="Enter your phone number" required/>
+                <p id="phoneError" class="error"></p>
                 <br>
                 <br>
+
                 <label for="message">Why do you want to volunteer?</label>
                 <br>
                 <textarea id="message" name="message" rows="5" cols="40" placeholder="Tell us more about why you want to volunteer" required ></textarea>
+                <p id="messageError" class="error"></p>
+                
                 <br>
                 <br>
-                <input type="submit" placeholder="submit"/>
+
+                <p id="result" role="status"></p>
+                <input type="submit" value="submit">
                 </div>
             </form>
         </div>
@@ -163,7 +186,8 @@
         <div class="copyright">&copy; ST10517543 <p id= "datetime"></p> </div>
     </footer>
 
-    <script src="JavaScript/script.js"> </script>
+    <script defer src="JavaScript/script.js"> </script>
+    <script defer src="JavaScript/formValidation.js"></script>
 </body>
 
 </html>

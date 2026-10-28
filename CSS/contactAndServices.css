@@ -9,7 +9,7 @@
 .address p{
     font-size:large;
 }
-.form{
+.service-form, .contact-form{
     border: 10px double rgb(99, 47, 47);
     background-color: rgb(197, 229, 241);
     margin: 1px;
@@ -17,7 +17,7 @@
     width: 50%;
     margin-top: 10px;
 }
-.form input, form textarea{
+.contact-form input, .contact-form textarea, .service-form input, .service-form textarea{
     background-color: rgb(193, 219, 211);
     width:70%;
 }
@@ -73,7 +73,7 @@
 }
 .info {
     margin: 1.5%;
-    width: 30%;    
+    width: 30%;   
 }
 
 .info h3{
@@ -202,6 +202,22 @@
     background-color: rgb(159, 182, 207);
     padding: 10px 20px;
 }
+/* form error message styling */
+.error{
+    color:rgb(219, 10, 10);
+    background-color: rgb(236, 205, 205);
+    border-left: 3px solid rgb(107, 49, 49);
+    border-radius: 30px;
+    padding: 4px 8px;
+    margin-top: 5px;
+    border-radius: 4px;
+    font-size: 13px;
+    width: 70%;
+
+}
+.error:empty {
+    display: none;
+}
 
 @media (max-width: 600px){
 
@@ -209,7 +225,7 @@
         display: flex;
         flex-direction: column;
     }
-    .form{
+    .service-form, .contact-form{
         width: 100%;
     }
     .faq-section{
@@ -234,5 +250,9 @@
     }
     .info h3{
     padding-bottom: 5px;
+    }
+
+    .service .second-image {
+        display: none;
     }
 }

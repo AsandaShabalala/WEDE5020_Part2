@@ -1,41 +1,43 @@
 // creating the image lightbox
-
 const lightbox = document.createElement('div');
 lightbox.id = 'lightbox';
 document.body.appendChild(lightbox);
 
 const images = document.querySelectorAll(".lightBox-img");
-images.forEach(image => {
+//safe gaurd for other pages
+if(images){
+  images.forEach(image => {
 
-  image.addEventListener('click',  e =>{
-    lightbox.classList.add('active');
+    image.addEventListener('click',  e =>{
+      lightbox.classList.add('active');
   
-
-    const img = document.createElement('img');
-    img.src = image.src;
-    while(lightbox.firstChild){
-      lightbox.removeChild(lightbox.firstChild);
-    }
-
-    lightbox.appendChild(img);
+      const img = document.createElement('img');
+      img.src = image.src;
+      while(lightbox.firstChild){
+        lightbox.removeChild(lightbox.firstChild);
+      }
+      lightbox.appendChild(img);
+    })
   })
-})
 
-lightbox.addEventListener('click', e => {
+  lightbox.addEventListener('click', e => {
 
-  if (e.target !== e.currentTarget) return;
-  lightbox.classList.remove('active');
-})
+    if (e.target !== e.currentTarget) return;
+    lightbox.classList.remove('active');
+  })
+}
 
 // FAQs 
 const questions = document.querySelectorAll('.faq-button');
-questions.forEach(question => {
+if(questions){
+  questions.forEach(question => {
 
-  question.addEventListener('click', e => {
-    const answer = question.nextElementSibling;
-    answer.classList.toggle('active');
+    question.addEventListener('click', e => {
+      const answer = question.nextElementSibling;
+      answer.classList.toggle('active');
+    })
   })
-})
+}
 
 // menu sidebar
 
@@ -54,14 +56,6 @@ exitButton.addEventListener('click', e =>{
   sidebar.classList.remove('active');
 })
 
-// form submit, imade this so they can be a pop up when the form is submitted and the page should
-// not reload since that was kind of annoying me sir
-function formSubmittedAlert(){
-
-  event.preventDefault();
-  alert('Form submitted successfully');
-  event.target.reset();
-}
 //date and time
 function updateDateTime(){
   const now = new Date();
@@ -83,41 +77,38 @@ updateDateTime();
 //Search feature on service page
 
 const searchService = document.getElementById('searviceSearch');
-searchService.addEventListener('keyup', e =>{
-  let currentValue = e.target.value;
-  let services = document.querySelectorAll('h3.title');
+//safe gaurd for other pages
+if(searchService){
+  searchService.addEventListener('keyup', e =>{
+    let currentValue = e.target.value;
+    let services = document.querySelectorAll('h3.title');
 
-  services.forEach(service =>{
-    if(service.textContent.toLowerCase().includes(currentValue.toLowerCase())){
-      service.parentNode.parentNode.style.display = 'flex';
-    }else{
-      service.parentNode.parentNode.style.display = 'none';
-    }
+    services.forEach(service =>{
+      if(service.textContent.toLowerCase().includes(currentValue.toLowerCase())){
+        service.parentNode.parentNode.style.display = 'flex';
+      }else{
+        service.parentNode.parentNode.style.display = 'none';
+      }
+    });
   });
-});
-
+}
 //service loading animation
 const services = document.querySelectorAll('.service');
-services.forEach(service =>{
-  let randomAnimationDelay = Math.floor(Math.random() * 500);
-  service.style.animation = `fadeIn 1s .${randomAnimationDelay}s ease forwards`;
-});
-
-// const galleryImgs = document.querySelectorAll('.gallery-img');
-
-// galleryImgs.forEach(galleryImg =>{
-//   let AnimationDelay = Math.floor(Math.random() * 500);
-//   galleryImg.style.animation = `fadeIn 1s .${AnimationDelay}s ease forwards`;
-//   console.log(galleryImg.style.animation);
-
-// });
-
+//safe gaurd for other pages
+if(services){
+  services.forEach(service =>{
+    let randomAnimationDelay = Math.floor(Math.random() * 500);
+    service.style.animation = `fadeIn 1s .${randomAnimationDelay}s ease forwards`;
+  });
+}
 
 //Veiw more services 
 const viewMore = document.getElementById('view-more-button');
 const moreServices = document.querySelector('.more-services');
 
-viewMore.addEventListener('click', e =>{
+//if to safe gauerd so other webpages donot get errors
+if (viewMore) {
+  viewMore.addEventListener('click', e =>{
   const moreServices = document.querySelector('.more-services');
 
   moreServices.classList.toggle('active');
@@ -128,3 +119,7 @@ viewMore.addEventListener('click', e =>{
     viewMore.textContent = 'View All Services'
   }
 });
+}
+
+
+

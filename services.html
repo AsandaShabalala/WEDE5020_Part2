@@ -81,10 +81,7 @@
                         They assist residents with daily medical neeeds like routine health checks, medication treatment. This 
                         helps make sure our elderly are in the best shapes they can be.
                     </p>
-                <img src="Images/training.jpg" alt="training picture" class="lightBox-img">
-
             </div>
-
         </div>
 
         <div class="service">
@@ -188,35 +185,46 @@
             <button type="button" id="view-more-button">View All Services</button>
         </div>
 
-    <div class="form">
+    <div class="service-form">
 
         <h2>Enquire About Our Services</h2>
         <p>Complete the form below to enquire about our services</p>
 
-        <form onsubmit="formSubmittedAlert()">
+        <form id="servicesForm"
+        action="https://api.web3forms.com/submit"
+        method="POST">
+
+        <input type="hidden"
+        name="access_key"
+        value="c366112d-ee6c-41f9-8eea-0e9de6738886">
+
             <br>
             <div class="form-elements">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name"
                         placeholder="Enter your name" required/>
+                <p class="error" id="nameError"></p>
 
                 <br><br>
 
                 <label for="surname">Surname:</label>
                 <input type="text" id="surname" name="surname"
                         placeholder="Enter your surname" required/>
+                <p class="error" id="surnameError"></p>
 
                 <br><br>
 
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email"
                         placeholder="Enter your email" required/>
+                <p id="emailError" class="error"></p>
 
                 <br><br>
 
                 <label for="phone">Phone:</label>
                 <input type="tel" id="phone" name="phone"
-                        placeholder="Enter your phone number"/>
+                        placeholder="Enter your phone number" required>
+                <p id="phoneError" class="error"></p>
 
                 <br><br>
 
@@ -250,11 +258,11 @@
                 <br>
                 <textarea id="message" name="message" rows="5" cols="40"
                             placeholder="Tell us mmore about the enquiry" required></textarea>
+                <p id="messageError" class="error"></p>
 
                 <br><br>
-
-                <input type="submit" value="Submit"
-                />
+                <p id="result" role="status"></p>
+                <input type="submit">
             </div>
 
         </form>
@@ -269,7 +277,9 @@
         <p>info@afto.co.za</p>
         <div class="copyright">&copy; ST10517543 <p id= "datetime"></p> </div>
     </footer>
-    <script src="JavaScript/script.js"> </script>
+    
+    <script defer src="JavaScript/script.js"> </script>
+    <script defer src="JavaScript/formValidation.js"></script>
 </body>
 
 </html>
