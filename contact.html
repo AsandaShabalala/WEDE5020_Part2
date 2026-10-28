@@ -8,6 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="Images/Logo.jpg" type="image/jpeg">
 
+    <!-- interactive map -->
+    <!-- Includes the Mapbox GL JS CSS stylesheet -->
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.33.0/mapbox-gl.css" rel="stylesheet">
+    <!-- Imports the Mapbox GL JS bundle -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.33.0/mapbox-gl.js"></script>
+
 </head>
 
 <body>
@@ -172,9 +178,8 @@
         </section>
     </div>
 
-    <div class="map">
-        <h3 style="margin-bottom: 0%;">Our Location</h3>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d57225.97788785894!2d28.17910686644151!3d-26.306298944125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e3!4m0!4m5!1s0x1e950e09900794b9%3A0x8fe4f6aa2974f202!2sKensington%20Gardens%20Retirement%20Village%2C%2075%2011th%20Avenue%2C%20Kensington%2C%20Johannesburg%2C%202094!3m2!1d-26.187403!2d28.100576!5e0!3m2!1sen!2sza!4v1786184849140!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    <h3 id="map-heading">Find us</h3>
+    <div id="map">
 
     </div>
     </main>

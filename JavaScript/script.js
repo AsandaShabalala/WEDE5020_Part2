@@ -121,5 +121,16 @@ if (viewMore) {
 });
 }
 
+mapboxgl.accessToken = 'pk.eyJ1IjoibWFsZS1sZXNiaWFuIiwiYSI6ImNtdnMyMm0wbjAzOG4zMHF5bDBkNTZzOXEifQ.q3EAGDlGwRed7g_eify6ug';
 
+const map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v11',
+    center: [28.100204616671142, -26.187502300058878],
+    zoom: 14
+});
+new mapboxgl.Marker()
+    .setLngLat([28.100204616671142, -26.187502300058878])
+    .addTo(map);
+map.addControl(new mapboxgl.NavigationControl());
 

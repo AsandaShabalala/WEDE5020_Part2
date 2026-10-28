@@ -21,6 +21,11 @@ This website for an old age organization so that people can find out more about 
 - aboutUsAndGallery.css — Styling for the About Us and Gallery webpages
 - contactAndServices.css — Styling for the Contact and Services webpages
 
+## JavaScript files
+
+- script.js
+- formValidation.js
+
 ## Change Log
 
 - Added website styling using CSS
@@ -49,3 +54,7 @@ This website for an old age organization so that people can find out more about 
 - [Search feature](https://youtu.be/ifi6dXOl3g4?si=EAuFyV8vmpReYjz5)
 
 - [FormSubmision(Web3Forms)](https://web3forms.com/templates/javascript-file-upload-form-pro)
+
+- [Interactive Map](https://docs.mapbox.com/mapbox-gl-js/guides/get-started/use-with-cdn/?utm_source=chatgpt.com)
+
+- [interactive Map2](https://www.youtube.com/watch?v=OySigNMXOZU)
