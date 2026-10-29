@@ -43,7 +43,7 @@ This website for an old age organization so that people can find out more about 
 - added a ssearch feature to the services page
 - added meta keywords and Descriptions for each page
 
-### almost everything that was not showed to us by our lecture, i used for CSS i got it from these yt videos
+### What I used to assist me in building this project
 
 - [CSS styling](https://youtu.be/wRNinF7YQqQ?si=q4d-T-w_W3zw3ypE)
 
@@ -62,3 +62,5 @@ This website for an old age organization so that people can find out more about 
 - [Interactive Map](https://docs.mapbox.com/mapbox-gl-js/guides/get-started/use-with-cdn/?utm_source=chatgpt.com)
 
 - [interactive Map2](https://www.youtube.com/watch?v=OySigNMXOZU)
+
+- [sitemap](https://youtu.be/_lGJcZIPXMM?si=lZHYWLnomlbiyG_i)
