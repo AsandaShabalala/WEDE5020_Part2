@@ -33,11 +33,15 @@ This website for an old age organization so that people can find out more about 
 - Added images and multimedia content
 - Created a responsive design for mobile devices using media queries
 - Fixed layout and image display issues
+
+### New Features
+
 - Added lightbox functionality on the gallery and services pages
 - added a sidebar menu and that can clicked useful for mobile devices
 - added a FAQs section
 - adding a form on the services page and updating them to have the name tags corresponding with their labels
 - added a ssearch feature to the services page
+- added meta keywords and Descriptions for each page
 
 ### almost everything that was not showed to us by our lecture, i used for CSS i got it from these yt videos
 
