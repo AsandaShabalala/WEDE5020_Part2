@@ -1,7 +1,8 @@
 # CHANGELOG
 
--[Visit The completed website here](https://associationfortheold.netlify.app/)
-https://associationfortheold.netlify.app/
+- [Visit The completed website here](https://associationfortheold.netlify.app/)
+
+## https://associationfortheold.netlify.app/
 
 ## improvements made on part based on part 2
 

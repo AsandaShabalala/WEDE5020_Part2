@@ -1,8 +1,11 @@
 # AFTO (Association For The Old)
--[Visit The website here](https://associationfortheold.netlify.app/)
-This website for an old age organization so that people can find out more about them.
+- [Visit The website here](https://associationfortheold.netlify.app/)
+- This website for an old age organization so that people can find out more about them.
 
 ## https://associationfortheold.netlify.app/
+
+![Published the website on netlify](Images/Published.png)
+
 ## Current Webpages
 
 - Home page
