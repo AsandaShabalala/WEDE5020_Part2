@@ -75,13 +75,17 @@ function updateDateTime(){
 updateDateTime();
 
 //Search feature on service page
-
 const searchService = document.getElementById('searviceSearch');
 //safe gaurd for other pages
 if(searchService){
   searchService.addEventListener('keyup', e =>{
     let currentValue = e.target.value;
     let services = document.querySelectorAll('h3.title');
+
+    // reveal the hidden services so the search can reach them since the search couldnot reach the service before the view more services button was clicked
+    if(moreServices){
+      moreServices.classList.add('active');
+    }
 
     services.forEach(service =>{
       if(service.textContent.toLowerCase().includes(currentValue.toLowerCase())){
@@ -92,6 +96,7 @@ if(searchService){
     });
   });
 }
+
 //service loading animation
 const services = document.querySelectorAll('.service');
 //safe gaurd for other pages
