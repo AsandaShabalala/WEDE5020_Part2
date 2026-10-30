@@ -11,14 +11,17 @@
 
     <link href="CSS/style.css" rel="stylesheet">
     <link href="CSS/contactAndServices.css" rel="stylesheet">
-    
     <link rel="icon" href="Images/Logo.jpg" type="image/jpeg">
+    <script defer src="JavaScript/script.js"> </script>
+    <script defer src="JavaScript/formValidation.js"></script>
 
     <!-- interactive map -->
     <!-- Includes the Mapbox GL JS CSS stylesheet -->
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.33.0/mapbox-gl.css" rel="stylesheet">
     <!-- Imports the Mapbox GL JS bundle -->
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.33.0/mapbox-gl.js"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.3.2/mapbox-gl-directions.js"></script>
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.3.2/mapbox-gl-directions.css" type="text/css">
 
 </head>
 
@@ -67,14 +70,6 @@
     </header>
 
     <main>
-            <!-- <P>how long have you been inservices  
-                <button class="FAQsButton"
-                onclick="
-                displayFAQs ();
-                "
-                >+</button>
-            </P>         -->
-
         <div class="address">
             <h1>Contact Us</h1>
 
@@ -148,34 +143,45 @@
 
                 <div class="faq-items">
                     <button class="faq-button">
-                        How long have we been inservice
+                        What is AFTO about?
                         <span class="icon"> + </span>
                     </button>
 
                     <div class="faq-answer">
-                        <p>spiderman focken sucks</p>
+                        <p>AFTO is an organisation dedicated to supporting and caring for elderly people by providing a safe, comfortable and welcoming environment.</p>
                     </div>
                 </div>
 
                 <div class="faq-items">
                     <button class="faq-button">
-                        How long have we been inservice
+                        What services do you offer?
                         <span class="icon"> + </span>
                     </button>
 
                     <div class="faq-answer">
-                        <p>spiderman focken suck</p>
+                        <p>We offer a range of care services for our residents, including accommodation, meals, health support and social activities. See our Services page for the full list.</p>
                     </div>
                 </div>
 
                 <div class="faq-items">
                     <button class="faq-button">
-                        How long have we been inservice
+                        Can I volunteer at AFTO?
                         <span class="icon"> + </span>
                     </button>
 
                     <div class="faq-answer">
-                        <p>spiderman focken suck</p>
+                        <p>Yes, we welcome volunteers. Complete the volunteer form and we will be in touch about how you can help.</p>
+                    </div>
+                </div>
+
+                <div class="faq-items">
+                    <button class="faq-button">
+                        How to book for someone?
+                        <span class="icon"> + </span>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>Fill in the enquiry form on our Services page with your details and message, and our team will get back to you by email. You can also reach us through the Contact page.</p>
                     </div>
                 </div>
 
@@ -196,9 +202,6 @@
         <p>info@afto.co.za</p>
         <div class="copyright">&copy; ST10517543 <p id= "datetime"></p> </div>
     </footer>
-
-    <script defer src="JavaScript/script.js"> </script>
-    <script defer src="JavaScript/formValidation.js"></script>
 </body>
 
 </html>

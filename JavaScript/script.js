@@ -129,8 +129,20 @@ const map = new mapboxgl.Map({
     center: [28.100204616671142, -26.187502300058878],
     zoom: 14
 });
-new mapboxgl.Marker()
-    .setLngLat([28.100204616671142, -26.187502300058878])
-    .addTo(map);
-map.addControl(new mapboxgl.NavigationControl());
+//disables scrolling with a mouse on the map so the user does not accidentally scroll
+//map.scrollZoom.disable();
 
+// adding a marker on our location and it is clickable
+const popup = new mapboxgl.Popup({ offset: 25 })
+    .setHTML('<h3>Our Location</h3><p>75 11th Ave, Kensington</p>');
+
+new mapboxgl.Marker({ color: 'rgb(11, 67, 170)' })
+    .setLngLat([28.100204616671142, -26.187502300058878])
+    .setPopup(popup)
+    .addTo(map);
+
+var directions = new MapboxDirections({
+  accessToken: 'pk.eyJ1IjoibWFsZS1sZXNiaWFuIiwiYSI6ImNtdnMyMm0wbjAzOG4zMHF5bDBkNTZzOXEifQ.q3EAGDlGwRed7g_eify6ug'
+});
+
+map.addControl(directions, 'top-left');
